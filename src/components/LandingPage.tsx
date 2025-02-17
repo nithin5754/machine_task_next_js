@@ -1,20 +1,19 @@
 import TitleSection from "./TitleSection";
-import Footer from "./Footer";
-import MiddleSection from "./MiddleSection";
 
-const LandingPage = () => {
+import MiddleSection from "./MiddleSection";
+import { FC } from "react";
+import MobileMiddleSection from "./mobile/MobileMiddleSection";
+
+const LandingPage: FC = () => {
   return (
-    <>
+    <div className="flex flex-col justify-between">
       <TitleSection
         main_title="The First Media Company crafted For the"
         sub_title="Digital First generation"
       />
-
-   <MiddleSection />
-
-
-      <Footer />
-    </>
+      <MobileMiddleSection />
+      <MiddleSection />
+    </div>
   );
 };
 
